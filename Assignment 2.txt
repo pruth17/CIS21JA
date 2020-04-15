@@ -1,0 +1,74 @@
+Tiffany Chokry
+CIS 21JA - Assignment 2
+
+1. Translate the following C++ code to assembly, assume that all variables are of size 4 bytes and no overflow is happening.
+result = num1 + num2 – (num3 + num4);
+
+mov eax, num1
+add eax, num2
+mov ebx, num3
+add ebx, num4
+sub eax, ebx
+mov result, eax
+
+
+2. Write a one line of code in assembly that would achieve the following: copies the number inside al (Only 8 bits) into whole edx, so that the value inside edx will be equal to the value inside the
+original al. Example: Assume that Initially eax = 0x153BCF19. When your code will end its running, I
+expect that edx = 0x00000019
+
+movzx edx, al
+
+
+3. Write a one line of code in assembly that would achieve the following: You are given eax = 0x1.
+Zero eax using only ADD instruction and a hexadecimal number.
+
+add eax, 0FFFFFFFFh
+
+
+4. Translate the following C++ code to assembly, assume that value1 is a word, value2 and valueResult are dword. and no overflow is happening.
+	valueResult = value1 – 4 - (value2 + 10)
+
+movzx eax, value1
+sub eax, 4
+mov ebx, value2
+add ebx, 10
+sub ebx, eax
+mov valueResult, eax
+
+
+
+5. Write a piece of code that implements the following C++ statement
+x = y = 1 ; // x, y are of size dword.
+
+mov y, 1
+mov eax, y
+mov x, eax
+
+6. Write a piece of code that implements the following C++ statements
+ 	d = 'z'; // a, d, b are of size byte.
+ 	a = d;
+	b = a;
+
+mov al, 'z'
+mov d, al
+mov al, d
+mov a, al
+mov al, a
+mov b, al
+
+
+Part two:(8 points)
+Follow the steps in VS 2017 Guide. Open hello.asm. Before the exit line of code, add the following line of
+code:
+
+ sub eax, 0FFFh
+
+Save and build the project.
+Set a breakpoint after the line that you just added. Run to the break point
+Open the debug window to see all the registers
+Show what values are in the following registers:
+
+AL:0C
+AH:F0
+AX:F00C
+EAX:FFFFF00C
