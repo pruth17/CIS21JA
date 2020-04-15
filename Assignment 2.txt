@@ -1,8 +1,7 @@
-Tiffany Chokry
 CIS 21JA - Assignment 2
 
 1. Translate the following C++ code to assembly, assume that all variables are of size 4 bytes and no overflow is happening.
-result = num1 + num2 – (num3 + num4);
+result = num1 + num2 â€“ (num3 + num4);
 
 mov eax, num1
 add eax, num2
@@ -26,7 +25,7 @@ add eax, 0FFFFFFFFh
 
 
 4. Translate the following C++ code to assembly, assume that value1 is a word, value2 and valueResult are dword. and no overflow is happening.
-	valueResult = value1 – 4 - (value2 + 10)
+	valueResult = value1 â€“ 4 - (value2 + 10)
 
 movzx eax, value1
 sub eax, 4
