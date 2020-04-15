@@ -1,6 +1,6 @@
 TITLE  Assignment 3
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; name: Tiffany Chokry
+; name: Pruthvi Punwar
 ; date: 5/3/2018
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 COMMENT !
