@@ -1,2 +1,6 @@
 # CIS21JA
-These are the assignments I completed during my Intro to Assembly Language class (CIS 21JA) at De Anza College.
+This class covered:
+The x86 processor architecture
+Data representation
+Syntax and semantics of the x86 instruction set
+Macros, procedures, and directives
